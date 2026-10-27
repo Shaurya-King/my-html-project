@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,60 +6,92 @@
 
     <style>
         body {
-        text-align: left;
-        font-family: Arial, sans-serif;
-    }
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
 
-    header {
-        text-align: center;
-    }
-</style>
+        header {
+            text-align: center;
+        }
+
+        img, iframe {
+            max-width: 100%;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Global daily news</h1>
-<p>Your trusted source for daily updates</p>
+<!-- Header: Centered -->
+<header>
+    <h1>Global daily news</h1>
+    <p>Your trusted source for daily updates</p>
 
-<nav>
-    <a href="#world">world</a> |
-    <a href="#sports">sports</a> |
-    <a href="#entertainment">entertainment</a> |
-    <a href="#podcast">podcast</a> |
-    <a href="#contact">contact</a>
-</nav>
+    <nav>
+        <a href="#world">world</a> |
+        <a href="#sports">sports</a> |
+        <a href="#entertainment">entertainment</a> |
+        <a href="#podcast">podcast</a> |
+        <a href="#contact">contact</a>
+    </nav>
+</header>
 
 <hr>
-<h2 id = "world">world news</h2>
+
+<!-- World News: Left-aligned -->
+<h2 id="world">world news</h2>
 <p>Today's Top Headline: Global leaders meet to think about Israel elections and west tensions</p>
+
 <img src="https://c.files.bbci.co.uk/16B26/production/_96566929_bbc_wn_rgb.png"
-     alt="My image"
+     alt="BBC News logo"
      width="300">
 
-<p><a href = "https://www.bbc.com/news/articles/c3j47l4kdez4o"> Read more on BBC News</a></p>
+<p>
+    <a href="https://www.bbc.com/news/articles/c3j47l4kdez4o">
+        Read more on BBC News
+    </a>
+</p>
+
 <hr>
 
-<h2 id = "sports">sports update</h2>
+<!-- Sports: Left-aligned -->
+<h2 id="sports">sports update</h2>
 <p>Highlights of latest football match with thrilling goals!</p>
-<iframe width = "560" height = "315"
-  src = "https://www.youtube.com/embed/aqz-KE-bpKQ" allow fullscreen></iframe>
+
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+    title="Sports video"
+    allowfullscreen></iframe>
+
 <hr>
 
-<h2 id = "entertainment">entertainment Buzz</h2>
+<!-- Entertainment: Left-aligned -->
+<h2 id="entertainment">entertainment Buzz</h2>
 <p>Biggest hit movie.</p>
-<iframe width = "400" height = "225"
-  src = "https://www.youtube.com/embed/8TZMtslA3UY" allow fullscreen></iframe>
+
+<iframe width="400" height="225"
+    src="https://www.youtube.com/embed/8TZMtslA3UY"
+    title="Entertainment video"
+    allowfullscreen></iframe>
+
 <hr>
 
-<h2 id = "podcast">News Podcast</h2>
+<!-- Podcast: Left-aligned -->
+<h2 id="podcast">News Podcast</h2>
 <p>Listen to today's top headlines:</p>
-<iframe width = "200" height = "180"
-    src = "https://www.youtube.com/embed/g7m-GLSarjY" allow fullscreen></iframe>
+
+<iframe width="200" height="180"
+    src="https://www.youtube.com/embed/g7m-GLSarjY"
+    title="News podcast"
+    allowfullscreen></iframe>
+
 <hr>
-    
 
+<!-- Footer: Left-aligned -->
+<footer>
+    <h3 id="contact">contact us</h3>
+    <p>Email: info@globalnews247.com</p>
+</footer>
 
-<!--Footer-->
-<h3 id = "contact">contact us</h3>
-<p>Email: info@globalnews247.com</p>
 </body>
 </html>
