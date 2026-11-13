@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .outer-box {
+            border: 1px solid #7FA786;
+            padding: 25px;
+            max-width: 600px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 250px;
+        }
+        input {
+            border: 1px solid #999;
+            padding: 5px;
+            font-size: 14px;
+        }
+        input::placeholder {
+            color: #b0b0b0;
+        }
+        .age-input {
+            width: 70px;
+            color: #666;
+        }
+        button {
+            width: fit-content;
+            padding: 4px 12px;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="color: #2E6B3E; margin-top: 0;">Output</h2>
+    
+    <div class="outer-box">
+        <form action="submit.php" method="POST">
+            <!-- Full Name: Required -->
+            <input type="text" placeholder="Full name" required>
+
+            <!-- Email: Required, native browser email check handles missing '@' -->
+            <input type="email" placeholder="you@college.edu" required>
+
+            <!-- Mobile: Required, 10-digit numeric constraint via regex pattern -->
+            <input type="tel" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+
+            <!-- Password: Required, Minimum 6 characters -->
+            <input type="password" placeholder="Min 6 characters" minlength="6" required>
+
+            <!-- Age: Numeric spinner, starts at 17, maximum allowed value is 30 -->
+            <input type="number" class="age-input" value="17" max="30" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
